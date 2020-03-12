@@ -1,0 +1,52 @@
+<RCC>
+    <qresource prefix="/">
+        <file>res/notes/11.wav</file>
+        <file>res/notes/10.wav</file>
+        <file>res/notes/9.wav</file>
+        <file>res/notes/8.wav</file>
+        <file>res/notes/7.wav</file>
+        <file>res/notes/6.wav</file>
+        <file>res/notes/5.wav</file>
+        <file>res/notes/4.wav</file>
+        <file>res/notes/3.wav</file>
+        <file>res/notes/2.wav</file>
+        <file>res/notes/1.wav</file>
+        <file>res/notes/0.wav</file>
+        <file>res/edge.png</file>
+        <file>res/scoreboard.png</file>
+        <file>res/welcome-bg.png</file>
+        <file>res/welcome-logo.png</file>
+        <file>res/notice.png</file>
+        <file>res/Fruktur-Regular.ttf</file>
+        <file>res/x.png</file>
+        <file>res/loading/active-black-node.png</file>
+        <file>res/loading/loading-bg.png</file>
+        <file>res/mod-mov.png</file>
+        <file>res/progressBar/progressBar-1.png</file>
+        <file>res/progressBar/progressBar-2.png</file>
+        <file>res/progressBar/progressBar-3.png</file>
+        <file>res/progressBar/progressBar-4.png</file>
+        <file>res/progressBar/progressBar-5.png</file>
+        <file>res/progressBar/progressBar-6.png</file>
+        <file>res/progressBar/progressBar-7.png</file>
+        <file>res/progressBar/progressBar-8.png</file>
+        <file>res/progressBar/progressBar-9.png</file>
+        <file>res/progressBar/progressBar-10.png</file>
+        <file>res/clock/clockFace-3.png</file>
+        <file>res/clock/clockFace-4.png</file>
+        <file>res/clock/clockFace-5.png</file>
+        <file>res/clock/clockFace-6.png</file>
+        <file>res/clock/clockFace-7.png</file>
+        <file>res/clock/clockFace-8.png</file>
+        <file>res/clock/clockFace-9.png</file>
+        <file>res/clock/clockFace-10.png</file>
+        <file>res/clock/clockFace-11.png</file>
+        <file>res/clock/clockFace-12.png</file>
+        <file>res/clock/clockHand.png</file>
+        <file>res/sBoard.png</file>
+        <file>res/logo-ball.png</file>
+        <file>res/notes/silence.wav</file>
+        <file>res/nodes/blank/node.png</file>
+        <file>res/active nodes/activenode.png</file>
+    </qresource>
+</RCC>
