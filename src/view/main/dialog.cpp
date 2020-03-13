@@ -44,3 +44,8 @@ void Dialog::on_buttonBox_accepted()
         settings.setValue(tr("gameVersion"),"hard");
     hide();
 }
+
+void Dialog::on_buttonBox_rejected()
+{
+    hide();
+}
