@@ -317,7 +317,7 @@ void Node::setPixmapFromValue()
     p.setBrush(b);
     p.setWidth(70);
     painter->setBrush(b);
-    p.setColor(Qt::white); b.setColor(Qt::white);
+    p.setColor(Qt::black); b.setColor(Qt::black);
     painter->setPen(p);
     QString valueString = QString::fromStdString(std::to_string(value_m));
     if(value_m>9) {
