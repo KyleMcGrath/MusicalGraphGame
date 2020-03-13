@@ -10,7 +10,7 @@ using namespace std;
 #endif
 
 MainWindow::MainWindow(QWidget *parent) :
-    QMainWindow(parent, Qt::FramelessWindowHint),
+    QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
 #ifdef DEBUG
