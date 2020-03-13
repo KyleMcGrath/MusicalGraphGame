@@ -78,7 +78,8 @@ public:
             sound = settings.value(tr("sound")).toBool();
         else sound = true;
         if(settings.contains(tr("gameVersion"))){
-            gameVersion = settings.value(tr("gameVersion")).toString();cerr << "gameVersion=" << gameVersion.toStdString() << endl;}
+            gameVersion = settings.value(tr("gameVersion")).toString();
+            cerr << "gameVersion=" << gameVersion.toStdString() << endl;}
         else {
             settings.setValue(tr("gameVersion"), tr("easy"));
             gameVersion = tr("easy");
@@ -88,7 +89,10 @@ public:
         else problemIndex = 0;
         if(settings.contains(gameVersion+tr("modulus")))
             modulus = settings.value(gameVersion+tr("modulus")).toInt();
-        else modulus = 12;
+        else if(gameVersion == tr("hard"))
+            modulus = 84;
+        else
+            modulus = 12;
         ui = a_ui;
         commonInit();
         makeGraph();
