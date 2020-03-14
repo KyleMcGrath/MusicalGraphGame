@@ -3,3 +3,5 @@
 	Under MusicalGraphGame menu item, you can find “Preferences”. This opens a dialog to change difficulty. Under Game Options menu item, you can find “New Game”. If you change the difficulty you must start a new game.
 
 	If you make changes to the source code, then you should run “Clean” and recompile the entire project.
+
+Tutorial for compilation: https://www.youtube.com/watch?v=lF9lt30Djgo
