@@ -142,19 +142,19 @@ public:
 
         Node * n0 = new Node(parentNode, -50000, -5000, 0);
         n0->activate();
-        n0->setOpacity(0.1);
+        n0->setOpacity(0.0);
         itemBuffer.push_back(n0);
         Node * n1 = new Node(parentNode, -50000, 5000, 0);
         n1->activate();
-        n1->setOpacity(0.1);
+        n1->setOpacity(0.0);
         itemBuffer.push_back(n1);
         Node * n2 = new Node(parentNode, 50000, -5000, 0);
         n2->activate();
-        n2->setOpacity(0.1);
+        n2->setOpacity(0.0);
         itemBuffer.push_back(n2);
         Node * n3 = new Node(parentNode, 50000, 5000, 0);
         n3->activate();
-        n3->setOpacity(0.1);
+        n3->setOpacity(0.0);
         itemBuffer.push_back(n3);
     }
 
