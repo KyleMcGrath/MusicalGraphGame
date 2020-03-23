@@ -346,16 +346,24 @@ public:
         edgeSet = new EdgeSet(parentNode);
 
         bool named = false;
-        bool animated = false;
 
         if(problemIndex>33) {
             int x = valueDist(gen);
-            if(3*x/modulus==2) {
+            if(x%modulus/3==2) {
                 makeNodes_nGon();
-            } else if(3*x/modulus==1) {
+#ifdef DEBUG
+        cerr << "In makeGraph(). makeNodes_nGon()" << endl;
+#endif
+            } else if(x%modulus/3==1) {
                 makeBigLattice(); named = true;
+#ifdef DEBUG
+        cerr << "In makeGraph(). makeBigLattice()" << endl;
+#endif
             } else {
                 makeTree(); named = true;
+#ifdef DEBUG
+        cerr << "In makeGraph(). makeTree()" << endl;
+#endif
             }
         } else {
             switch(problemIndex+3 % 45) {
@@ -387,11 +395,13 @@ public:
 
             if(!named)
                 makeRandomEdges();
-            if(!animated)
-                for(auto it = nodes.cbegin(); it != nodes.cend(); it++)
-                    itemBuffer.push_back(*it);
+            for(auto it = nodes.cbegin(); it != nodes.cend(); it++)
+                itemBuffer.push_back(*it);
 
         }
+#ifdef DEBUG
+        cerr << "problemIndex = " << problemIndex << endl;
+#endif
         itemBuffer.push_back(edgeSet);
         (*nodes.cbegin())->activate();
         activeNode = *nodes.begin();
