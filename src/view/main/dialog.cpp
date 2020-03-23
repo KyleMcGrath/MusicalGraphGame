@@ -24,6 +24,9 @@ Dialog::Dialog(QWidget *parent) :
         ui->radioButton_2->setChecked(true);
     else
         ui->radioButton->setChecked(true);
+
+    ui->spinBox->setValue(settings.value(gameVersion+tr("problemIndex")).toInt());
+    ui->horizontalSlider->setValue(settings.value(gameVersion+tr("problemIndex")).toInt());
 }
 
 Dialog::~Dialog()
@@ -36,16 +39,32 @@ void Dialog::on_buttonBox_accepted()
 
     QSettings settings(tr("MusicalGraph"), tr("MusicalGraph"), this);
     QString gameVersion;
-    if(ui->radioButton->isChecked())
+    if(ui->radioButton->isChecked()) {
+        gameVersion = "easy";
         settings.setValue(tr("gameVersion"),"easy");
-    else if(ui->radioButton_2->isChecked())
+    } else if(ui->radioButton_2->isChecked()) {
+            gameVersion = "medium";
         settings.setValue(tr("gameVersion"),"medium");
-    else if(ui->radioButton_3->isChecked())
+    } else if(ui->radioButton_3->isChecked()) {
+            gameVersion = "hard";
         settings.setValue(tr("gameVersion"),"hard");
+    }
+
+    settings.setValue(gameVersion+tr("problemIndex"), ui->spinBox->value());
     hide();
 }
 
 void Dialog::on_buttonBox_rejected()
 {
     hide();
+}
+
+void Dialog::on_horizontalSlider_sliderMoved(int position)
+{
+    ui->spinBox->setValue(position);
+}
+
+void Dialog::on_spinBox_valueChanged(int arg1)
+{
+    ui->horizontalSlider->setValue(arg1);
 }

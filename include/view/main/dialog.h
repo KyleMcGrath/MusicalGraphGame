@@ -21,6 +21,10 @@ private slots:
 
     void on_buttonBox_rejected();
 
+    void on_horizontalSlider_sliderMoved(int position);
+
+    void on_spinBox_valueChanged(int arg1);
+
 private:
     Ui::Dialog *ui;
 };
