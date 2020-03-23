@@ -393,15 +393,15 @@ public:
 
             }
 
-            if(!named)
-                makeRandomEdges();
-            for(auto it = nodes.cbegin(); it != nodes.cend(); it++)
-                itemBuffer.push_back(*it);
 
         }
 #ifdef DEBUG
         cerr << "problemIndex = " << problemIndex << endl;
 #endif
+        if(!named)
+            makeRandomEdges();
+        for(auto it = nodes.cbegin(); it != nodes.cend(); it++)
+            itemBuffer.push_back(*it);
         itemBuffer.push_back(edgeSet);
         (*nodes.cbegin())->activate();
         activeNode = *nodes.begin();
