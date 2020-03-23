@@ -5,3 +5,5 @@
 	If you make changes to the source code, then you should run “Clean” and recompile the entire project.
 
 Tutorial for compilation: https://www.youtube.com/watch?v=lF9lt30Djgo
+
+	The new slider to change problemIndex adds a non-sequitor where the player can change which problem in the sequence of problems is being displayed.
