@@ -349,12 +349,12 @@ public:
 
         if(problemIndex>33) {
             int x = valueDist(gen);
-            if(x%modulus/3==2) {
+            if(x/3==2) {
                 makeNodes_nGon();
 #ifdef DEBUG
         cerr << "In makeGraph(). makeNodes_nGon()" << endl;
 #endif
-            } else if(x%modulus/3==1) {
+            } else if(x/3==1) {
                 makeBigLattice(); named = true;
 #ifdef DEBUG
         cerr << "In makeGraph(). makeBigLattice()" << endl;
