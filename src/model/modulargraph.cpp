@@ -1016,7 +1016,7 @@ public:
                 cleanUp();
             }
         }
-        if(gameVersion == tr("easy") && problemIndex < 200 && targetCounter < 2) nextMoveHint();
+        if(gameVersion == tr("easy") && targetCounter < 6) nextMoveHint();
     }
 
     void cleanUp() {
