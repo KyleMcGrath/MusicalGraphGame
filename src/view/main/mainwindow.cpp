@@ -66,6 +66,7 @@ MainWindow::~MainWindow()
     settings.setValue(tr("pos"), QVariant(pos()));
     delete ui;
     if(musicalGraph != nullptr) delete musicalGraph;
+    delete player;
 }
 
 void MainWindow::newGame()
