@@ -308,7 +308,6 @@ public:
         if(modulus>12)
             for(auto it = nodes.cbegin(); it != nodes.cend(); it++) {
                 (*it)->setAlwaysDrawNumbers();
-                (*it)->setPixmapFromValue();
             }
 
         makeTraps();
