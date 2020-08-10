@@ -48,8 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
     mc10 = QMediaContent(QUrl("qrc:/res/notes/10.wav"));
     mc11 = QMediaContent(QUrl("qrc:/res/notes/11.wav"));
 
-    player.setAudioRole(QAudio::GameRole);
-    player.setMuted(false);
+    player->setAudioRole(QAudio::GameRole);
+    player->setMuted(false);
 
 #ifdef DEBUG
         cerr << "Finish constructing MainWindow" << endl;
@@ -244,8 +244,8 @@ void MainWindow::setPlaylist()
     }
 #endif
 
-    player.setPlaylist(playlist);
-    player.play();
+    player->setPlaylist(playlist);
+    player->play();
 }
 
 void MainWindow::on_actionNew_Game_triggered()

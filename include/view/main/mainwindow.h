@@ -65,7 +65,7 @@ private:
     ModularGraph *musicalGraph;
     int *melody = new int[3];
 
-    QMediaPlayer player;
+    QMediaPlayer *player = new QMediaPlayer(nullptr, QMediaPlayer::LowLatency);
 
     void setPlaylist();
 
