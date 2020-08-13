@@ -210,8 +210,7 @@ void Node::setValueTrap(int modulus)
     for(int i = 0; i < modulus; i++) {
         setValue(i);
         setPixmapFromValue();
-        QPixmap p = pixmap();
-        QPixmap *p_ptr = new QPixmap(p);
+        QPixmap *p_ptr = new QPixmap(pixmap());
         pixmaps.push_back(p_ptr);
     }
 
